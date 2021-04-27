@@ -1,13 +1,16 @@
 import './App.css';
+import { MovieProvider } from './context'
+
 import MovieList from './components/MovieList'
-import { MovieProvider } from './context';
+import Nav from './components/nav'
+import AddMovie from './components/AddMovie'
 
 function App() {
-
-  
   return (
     <MovieProvider>
       <div className="App">
+        <Nav />
+        <AddMovie />
         <MovieList />
       </div>
     </MovieProvider>
